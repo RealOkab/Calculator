@@ -1,5 +1,8 @@
 /* Normal css */
-
+#det {
+  display: flex;
+  flex-direction: column;
+}
 #all-blocks {
   display: flex;
   justify-content: flex-end;
@@ -164,9 +167,6 @@ ul li,
   .obed {
     width: 95%;
   }
-  .try {
-    margin: 3em;
-  }
 }
 
 @media (max-width: 400px) {
@@ -174,7 +174,7 @@ ul li,
     width: 95%;
   }
   .try {
-    margin: 4em;
+    height: 65vh;
   }
 }
 .AC,
@@ -223,7 +223,7 @@ ul li,
 
 @media (max-width: 320px) {
   .try {
-    height: 55vh;
+    height: 50vh !important;
     width: 90%;
     margin-top: 5px;
     margin-bottom: 20px;
@@ -242,3 +242,32 @@ ul li,
     height: 50px;
   }
 }
+
+@media (max-width: 320px) {
+  .try {
+    height: 50vh important;
+    width: 90%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  .firstB span button {
+    margin-top: 1.5em;
+    border-radius: 1em;
+    font-size: 0.6em;
+    margin-left: 0.2em;
+    margin-right: 0.2;
+  }
+
+  .obed {
+    width: 90%;
+    height: 50px;
+  }
+.first-block,
+.move,
+.off{
+width:30px;
+height:20px
+}
+}
+
