@@ -11,7 +11,7 @@
   background-image: url(images/bird.jpg);
   height: 80vh;
   width: fit-content;
-  margin-top: 3em;
+  margin-top: 5px;
   border-radius: 1.5em;
 }
 
@@ -99,6 +99,16 @@ main {
   justify-content: center;
 }
 
+ul li,
+.feed {
+  font-size: 10px;
+}
+.feed {
+  color: blue;
+  margin-left: 2em;
+  margin-left: 3em;
+}
+
 .move {
   width: 100%;
   border-radius: 3em;
@@ -119,6 +129,11 @@ main {
   }
   .try {
     width: fit-content;
+  }
+
+  .feed {
+    color: blue;
+    margin-left: 2em;
   }
 }
 
@@ -170,4 +185,60 @@ main {
 
 .status {
   font-size: smaller;
+}
+
+@media (max-width: 376px) {
+  .try {
+    height: 60vh;
+    width: 90%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  .keyboard {
+    width: auto;
+  }
+
+  .firstB span button {
+    margin-top: 1.5em;
+    border-radius: 1em;
+    font-size: 0.7em;
+    margin-left: 0.1;
+    margin-right: 0.1;
+  }
+  .off {
+    font-size: large;
+  }
+
+  .first-block,
+  .move {
+    width: 3em;
+  }
+
+  .firstB span button:focus,
+  .firstB span button:hover {
+    border: 0px;
+    border: 1px solid rgb(210, 210, 250);
+  }
+}
+
+@media (max-width: 320px) {
+  .try {
+    height: 55vh;
+    width: 90%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  .firstB span button {
+    margin-top: 1.5em;
+    border-radius: 1em;
+    font-size: 0.6em;
+    margin-left: 0.2em;
+    margin-right: 0.2;
+  }
+
+  .obed {
+    width: 90%;
+    height: 50px;
+  }
 }
